@@ -5,7 +5,7 @@
 <head>
     <title>SportsPro Technical Support</title>
     <link rel="stylesheet" type="text/css"
-          href="/Rus_PHP_2/tech_support/main.css">
+          href="/Rus_PHP_3/tech_support copy/main.css">
 </head>
 
 <!-- the body section -->

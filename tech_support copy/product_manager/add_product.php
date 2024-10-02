@@ -10,12 +10,12 @@
    <head>
       <title>Contact Manager - Add Product</title>
       <link rel="stylesheet" type="text/css"
-            href="/Rus_PHP_2/tech_support/main.css">
+            href="/Rus_PHP_3/tech_support copy/main.css">
    </head>
    <body>
    <?php include '../view/header.php'; ?>
       <main>
-         <h2>Add Contact</h2>
+         <h2>Add Product</h2>
          <div>
             <form method="post" id="add_product">
             <div id="product">

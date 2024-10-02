@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manage Technicians</title>
         <link rel="stylesheet" type="text/css"
-            href="/Rus_PHP_2/tech_support/main.css">
+            href="/Rus_PHP_3/tech_support copy/main.css">
     </head>
     <body>
         <?php include '../view/header.php'; ?>
