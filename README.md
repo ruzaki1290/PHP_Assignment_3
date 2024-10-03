@@ -17,11 +17,11 @@ The `index.php` file in the `product_manager` directory has been completed. Addi
 - **Delete Product Page**: Allows for the deletion of a product.
 - **Add Product Page**: Allows for the addition of a new product.  
 
-### Changes Made
+### Completed Chalanges
 
-1. **Date Statement Update**:
+1. **10-1: Improved date handling**:
    - The `add_product.php` file in the `product_manager` directory has been updated to accept date inputs in both text and numerical formats. The date is then returned in the format specified in the code.
-2. **Conditional Statements Update**:
+2. **8-1: Improved controller code**:
    - The `if` statements in `add_product.php` and `add_technician.php` have been replaced with `switch` statements for better readability and maintainability.
 
 ### Directory Structure
