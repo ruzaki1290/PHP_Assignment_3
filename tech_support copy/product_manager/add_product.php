@@ -51,8 +51,24 @@
             $version = $_POST['version'];
             $releaseDate = $_POST['releaseDate'];
 
-            // validate form data
+            // validate form data CHANGED TO SWITCH STATEMENTS
+            /*
             if (empty($productCode) || empty($name) || empty($version) || empty($releaseDate)) {
+               echo "All fields are required.";
+               exit;
+            }
+            */
+            $isValid = true;
+            switch (true) {
+               case empty($productCode):
+               case empty($name):
+               case empty($version):
+               case empty($releaseDate):
+                  $isvalid = false;
+                  break;
+            }
+
+            if (!$isValid) {
                echo "All fields are required.";
                exit;
             }

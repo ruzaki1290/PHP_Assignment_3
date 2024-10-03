@@ -57,8 +57,26 @@
             $phone = $_POST['phone'];
             $password = $_POST['password'];
 
-            // validate form data
+            // validate form data CHANGED TO SWITCH STATEMENTS
+            /*
             if (empty($techId) || empty($firstName) || empty($lastName) || empty($email) || empty($phone) || empty($password)) {
+               echo "All fields are required.";
+               exit;
+            }
+            */
+            $isValid = true;
+            switch (true) {
+               case empty($techId);
+               case empty($firstName);
+               case empty($lastName);
+               case empty($techId);
+               case empty($email);
+               case empty($password);
+                  $isValid = false;
+                  break;
+            }
+
+            if (!$isValid) {
                echo "All fields are required.";
                exit;
             }
