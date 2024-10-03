@@ -20,21 +20,21 @@
             <form method="post" id="add_product">
             <div id="product">
             <label>Product Code:</label>
-            <input type="text" name="productCode" /><br />
+            <input type="text" name="productCode" placeholder="e.g., TEST777"/><br />
 
             <label>Product Name:</label>
-            <input type="text" name="name" /><br />
+            <input type="text" name="name" placeholder="e.g., Product-1"/><br />
 
             <label>Version:</label>
-            <input type="text" name="version" /><br />
+            <input type="text" name="version" placeholder="e.g., Version 1.0"/><br />
 
             <label>Release Date:</label>
-            <input type="date" name="releaseDate" /><br />
+            <input type="text" name="releaseDate" placeholder="e.g., October 2, 2024"/><br />
          </div>
 
          <div id="buttons">
             <label>&nbsp;</label>
-            <input type="submit" value="Save Product" /><br />
+            <input type="submit" value="Save Product"/><br />
          </div>
 
          </form>
@@ -58,6 +58,9 @@
             }
                      
             try {
+               // formted the release date
+               $date = new DateTime($releaseDate);
+               $formattedDate = $date->format('Y-m-d');
                // add the contact to the database
                $query = 'INSERT INTO products
                   (productCode, name, version, releaseDate)
@@ -68,7 +71,7 @@
                $statement->bindValue(':productCode', $productCode);
                $statement->bindValue(':name', $name);
                $statement->bindValue(':version', $version);
-               $statement->bindValue(':releaseDate', $releaseDate);
+               $statement->bindValue(':releaseDate', $formattedDate);
 
                // execute the statement
                $statement->execute();
